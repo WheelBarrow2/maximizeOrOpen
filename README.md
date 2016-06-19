@@ -56,4 +56,4 @@ No, only Linux systems using X-Server, since it uses wmctrl (and screen for that
 ##### Linux Mint keybidning
 Open System Settings -> Keyboard -> Shortcuts -> Custom Shortcuts
 Add a custom shortcut, where the Name is arbitrary. The Command should be `python /pathToScript/moro.py -a appToRun`. If we want to do this with google-chrome, we would have `python /pathToScript/moro.py -a google-chrome-stable`
-<center><iframe src='https://gfycat.com/ifr/FaroffImmenseBactrian' frameborder='0' scrolling='no' width='640' height='357.5418994413408' allowfullscreen></iframe></center>
+![alt text](http://i.imgur.com/nGT0HNI.gif)
