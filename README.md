@@ -36,7 +36,6 @@ Please note that this script is written so that most applications are supported 
 
 ## Requirements
 The requirements for this script is as follows:
-* Screen v 4.0 (GNU), Earlier versions might work, not tested
 * wmctrl v 1.07, Earlier versions might work, not tested
 
 Both are available with apt-get.
@@ -46,8 +45,6 @@ This is a list of features I'd like to implement. If I ever do however, I don't 
 * If there are more than one window of an application, executing the script multiple times would tab through them
 
 ## FAQ
-##### Why is screen required?
-Screen is required to start the targeted application if it is not already running. I'm sure there are other more elegant solutions to this, and you are more than welcome to fork this code and implement it.
 
 ##### Does this run on Windows or Mac?
 No, only Linux systems using X-Server, since it uses wmctrl (and screen for that matter).

@@ -4,7 +4,7 @@ import getopt
 
 
 def inAppList(app, appListLocal):
-    if len([item for item in appListLocal if item[0] == app]) > 0:
+    if len([item for item in appListLocal if item[0] == app.lower()]) > 0:
         return True
     else:
         return False
@@ -23,7 +23,7 @@ except:
     sys.exit()
 
 supportedApps = ['google-chrome-stable', 'nemo', 'spotify', 'atom',
-                 'gnome-terminal']
+                 'gnome-terminal', 'sun-awt-x11-xframepeer']
 
 helpString = ('moro.py 1.0\n'
               'Usage: python moro.py [OPTION]...\n'
@@ -51,6 +51,8 @@ overrideSupported = False
 for o, a in opts:
     if o == '-a':
         app = a.lower()
+        if app == 'pycharm':
+            app = 'sun-awt-x11-xframepeer'
     elif o == '-n':
         new = True
     elif o == '-v':
@@ -101,7 +103,7 @@ elif new is False:
             if c == '"':
                 cList.append(i)
             i = i + 1
-        appList.append((response[cList[0]+1:cList[1]], appId))
+        appList.append((response[cList[0]+1:cList[1]].lower(), appId))
     if verbose:
         print('App list:')
         print(appList)
@@ -116,11 +118,11 @@ elif new is False:
             if verbose:
                 print("Maximizing google-chrome-stable")
         else:
-            os.system('screen -d -m ' + app)
+            os.system(app)
             if verbose:
                 print("Starting new " + app)
 elif new is True:
     if app in supportedApps or overrideSupported is True:
-        os.system('screen -d -m ' + app)
+        os.system(app)
         if verbose:
             print("Starting new " + app + ". New flag was true")
