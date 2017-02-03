@@ -5,6 +5,21 @@ Maximize or Open is a python script which maximizes a given application, or open
 
 **Example:** You only want CTRL+ALT+t to open a new terminal if there is none running. By keybinding CTRL+ALT+t too moro, CTRL+ALT+t will only open a new terminal if none is already running.
 
+## Installation
+
+You can either use the python script dierctly after installing the depdendencies, or you can download the .deb package or add an apt repository. 
+
+*Download deb package*
+[moro_0.1_all.deb](/moro_0.1_all.deb)
+
+*Installing apt repository*
+```
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6EC44EE9
+sudo add-apt-repository "deb http://lofdev.net/repositories/ trusty main"
+sudo apt update
+sudo apt install moro
+```
+
 ## Usage
 ```
 python moro.py [OPTIONS]
