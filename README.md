@@ -9,10 +9,11 @@ Maximize or Open is a python script which maximizes a given application, or open
 
 You can either use the python script dierctly after installing the depdendencies, or you can download the .deb package or add an apt repository. 
 
-*Download deb package*
+**Download deb package**
+
 [moro_0.1_all.deb](/moro_0.1_all.deb)
 
-*Installing apt repository*
+**Installing apt repository**
 ```
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6EC44EE9
 sudo add-apt-repository "deb http://lofdev.net/repositories/ trusty main"
