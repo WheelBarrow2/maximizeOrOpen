@@ -37,7 +37,7 @@ Where options are
 
 **Example 1:** I want to run gnome-terminal
 ```
-python moro.py -a gnome-terminal
+moro -a gnome-terminal
 ```
 
 ## Supported applications
