@@ -23,7 +23,7 @@ sudo apt install moro
 
 ## Usage
 ```
-python moro.py [OPTIONS]
+moro [OPTIONS]
 ```
 
 Where options are
@@ -63,10 +63,10 @@ This is a list of features I'd like to implement. If I ever do however, I don't 
 ## FAQ
 
 ##### Does this run on Windows or Mac?
-No, only Linux systems using X-Server, since it uses wmctrl (and screen for that matter).
+No, only Linux systems using X-Server, since it uses wmctrl.
 
 ## Other
 ##### Linux Mint keybidning
 Open System Settings -> Keyboard -> Shortcuts -> Custom Shortcuts
-Add a custom shortcut, where the Name is arbitrary. The Command should be `python /pathToScript/moro.py -a appToRun`. If we want to do this with google-chrome, we would have `python /pathToScript/moro.py -a google-chrome-stable`
+Add a custom shortcut, where the Name is arbitrary. The Command should be `moro -a appToRun`. If we want to do this with google-chrome, we would have `moro -a google-chrome-stable`
 ![alt text](http://i.imgur.com/nGT0HNI.gif)
